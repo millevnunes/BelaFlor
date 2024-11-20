@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Floricultura Bela Flor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Floricultura Bela Flor</h1>
+        <p>As flores mais bonitas para todas as ocasiões</p>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="index.html">Produtos</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="carrinho.html">Carrinho</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Carrinho de Compras</h2>
+        <div id="carrinho-vazio">
+            <p>Seu carrinho está vazio. Adicione produtos para continuar.</p>
+        </div>
+        <div id="carrinho-conteudo" style="display: none;">
+            <!-- Lista de produtos no carrinho será inserida aqui -->
+        </div>
+        <div id="total" style="display: none;">
+            <h3>Total: R$ <span id="total-valor">0,00</span></h3>
+        </div>
+        <div id="finalizar" style="display: none;">
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Floricultura Bela Flor. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

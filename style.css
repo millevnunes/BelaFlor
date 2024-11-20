@@ -1,0 +1,205 @@
+/* CSS básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7d3c98;
+    color: #fff;
+    padding: 1.5rem 1rem; /* Mais espaçamento vertical */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0; /* Remove margens extras do título */
+    font-size: 2rem; /* Ajuste de tamanho para melhor visualização */
+}
+
+header p {
+    margin: 0.5rem 0 0 0; /* Pequeno espaçamento abaixo do título */
+    font-size: 1.2rem; /* Tamanho de texto menor */
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #a569bd;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4c2e4;
+}
+
+/* Conteúdo Principal */
+.container {
+    padding: 2rem;
+}
+
+/* Categorias de produtos */
+.category {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.product-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.product-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h4 {
+    margin: 10px 0 5px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Botões */
+button {
+    background-color: #a569bd;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7d3c98;
+}
+
+/* Rodapé */
+footer {
+    background-color: #7d3c98;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .product {
+        width: 100%;
+        height: auto;
+    }
+
+    .product img {
+        height: 200px;
+    }
+}
+
+/* Botão de Finalizar Compra */
+#finalizar {
+    display: block;
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    padding: 15px 30px; /* Tamanho maior para o botão */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    color: white; /* Cor do texto */
+    background-color: #a569bd; /* Cor do botão (verde) */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase; /* Letras maiúsculas */
+}
+
+#finalizar:hover {
+    background-color: #7d3c98; /* Cor mais escura ao passar o mouse */
+}
+
+/* Checkout: Alinha as opções uma embaixo da outra */
+.checkout-opcoes {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    gap: 15px; /* Espaçamento entre os elementos */
+    max-width: 400px; /* Limita a largura */
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+.checkout-opcoes label {
+    font-weight: bold;
+}
+
+.checkout-opcoes input,
+.checkout-opcoes button {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%; /* Largura total */
+    box-sizing: border-box;
+}
+
+.checkout-opcoes button {
+    background-color: #a569bd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-opcoes button:hover {
+    background-color: #7d3c98;
+}
+
+.container h2 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    font-size: 1.8em; /* Aumenta o tamanho da fonte */
+    color: #333; /* Cor do texto */
+}

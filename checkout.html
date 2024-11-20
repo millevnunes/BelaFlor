@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Floricultura Bela Flor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Floricultura Bela Flor</h1>
+        <p>Finalize sua compra com segurança!</p>
+    </header>
+
+    <!-- Checkout Formulário -->
+    <div class="container">
+        <h2>Informações de Pagamento</h2>
+        <form class="checkout-opcoes">
+            <label for="nome-completo">Nome Completo:</label>
+            <input type="text" id="nome-completo" placeholder="Digite seu nome completo" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" placeholder="Digite seu endereço" required>
+            
+            <label for="numero-cartao">Número do Cartão:</label>
+            <input type="text" id="numero-cartao" placeholder="Digite o número do cartão" required>
+            
+            <label for="validade-cartao">Validade:</label>
+            <input type="month" id="validade-cartao" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="Código de segurança" required>
+            
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Floricultura Bela Flor. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

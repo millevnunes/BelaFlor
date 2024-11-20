@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Bela Flor - Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Floricultura Bela Flor</h1>
+        <p>As flores mais bonitas para todas as ocasiões</p>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="index.html">Produtos</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="carrinho.html">Carrinho</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        
+        <!-- Categoria: Buquês -->
+        <div class="category">
+            <h2>Buquês</h2>
+            <div class="product-list" id="buques">
+                <div class="product">
+                    <img src="assets/rosas.jpg" alt="Buquê de Rosas">
+                    <h4>Buquê de Rosas</h4>
+                    <p>R$ 50,00</p>
+                    <button onclick="adicionarAoCarrinho('Buquê de Rosas', 50)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="assets/1.jpg" alt="Buquê de Lírios">
+                    <h4>Buquê de Lírios</h4>
+                    <p>R$ 60,00</p>
+                    <button onclick="adicionarAoCarrinho('Buquê de Lírios', 60)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="assets/2.jpg" alt="Buquê de Margaridas">
+                    <h4>Buquê de Margaridas</h4>
+                    <p>R$ 40,00</p>
+                    <button onclick="adicionarAoCarrinho('Buquê de Margaridas', 40)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="assets/3.jpg" alt="Buquê de Orquídeas">
+                    <h4>Buquê de Orquídeas</h4>
+                    <p>R$ 120,00</p>
+                    <button onclick="adicionarAoCarrinho('Buquê de Orquídeas', 120)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria: Cestas -->
+        <div class="category">
+            <h2>Cestas</h2>
+            <div class="product-list" id="cestas">
+                <div class="product">
+                    <img src="assets/7.jpg" alt="Cesta de Rosas">
+                    <h4>Cesta de Rosas</h4>
+                    <p>R$ 80,00</p>
+                    <button onclick="adicionarAoCarrinho('Cesta de Rosas', 80)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="assets/6.jpg" alt="Cesta de Frutas e Flores">
+                    <h4>Cesta de Frutas e Flores</h4>
+                    <p>R$ 100,00</p>
+                    <button onclick="adicionarAoCarrinho('Cesta de Frutas e Flores', 100)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="assets/5.jpg" alt="Cesta de Chocolate e Flores">
+                    <h4>Cesta de Chocolate e Flores</h4>
+                    <p>R$ 150,00</p>
+                    <button onclick="adicionarAoCarrinho('Cesta de Chocolate e Flores', 150)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="assets/8.jpg" alt="Cesta de Rosas e Champanhe">
+                    <h4>Cesta de Rosas e Champanhe</h4>
+                    <p>R$ 250,00</p>
+                    <button onclick="adicionarAoCarrinho('Cesta de Rosas e Champanhe', 250)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Floricultura Bela Flor. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
